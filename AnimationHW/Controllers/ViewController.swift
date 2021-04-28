@@ -40,8 +40,6 @@ class ViewController: UIViewController {
         animationView.duration = animations[index].duration
         animationView.animate()
         getAnimationDescription()
-
-        
         
         if index != animations.count {
             index += 1
@@ -55,12 +53,11 @@ class ViewController: UIViewController {
         animationDescription.text = """
             preset: \(animations[index].preset.rawValue)
             curve: \(animations[index].curve.rawValue)
-            force: \(animations[index].force)
-            delay: \(animations[index].delay)
-            duration: \(animations[index].duration)
+            force: \(String(format: "%.2f", animations[index].force))
+            delay: \(String(format: "%.2f", animations[index].delay))
+            duration: \(String(format: "%.2f", animations[index].duration))
             """
     }
-    
     
 }
 

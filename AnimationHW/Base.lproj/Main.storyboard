@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2K-D6-Smm" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="87" y="131" width="240" height="128"/>
+                                <rect key="frame" x="87" y="50" width="146" height="120"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dn-RV-gwa">
-                                        <rect key="frame" x="20" y="20" width="200" height="88"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dn-RV-gwa">
+                                        <rect key="frame" x="20" y="20" width="106" height="80"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -32,11 +32,11 @@
                                     <constraint firstAttribute="trailing" secondItem="6dn-RV-gwa" secondAttribute="trailing" constant="20" id="F9w-lL-wjN"/>
                                     <constraint firstItem="6dn-RV-gwa" firstAttribute="top" secondItem="y2K-D6-Smm" secondAttribute="top" constant="20" id="gTw-rD-thu"/>
                                     <constraint firstAttribute="bottom" secondItem="6dn-RV-gwa" secondAttribute="bottom" constant="20" id="iGw-AG-oHv"/>
-                                    <constraint firstAttribute="height" constant="128" id="jUk-Ez-xIO"/>
+                                    <constraint firstAttribute="height" constant="120" id="jUk-Ez-xIO"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ky-9h-AnO" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="123" y="740" width="168" height="30"/>
+                                <rect key="frame" x="123" y="343" width="74" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,8 +53,10 @@
                             <constraint firstItem="4ky-9h-AnO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="MSA-tT-Umh"/>
                             <constraint firstItem="y2K-D6-Smm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="cJZ-Gu-yKp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ky-9h-AnO" secondAttribute="trailing" constant="123" id="kug-SA-aSv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4ky-9h-AnO" secondAttribute="bottom" constant="92" id="nTV-fc-Cuk"/>
-                            <constraint firstItem="y2K-D6-Smm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="qTv-jg-Twb"/>
+                            <constraint firstItem="4ky-9h-AnO" firstAttribute="top" secondItem="6dn-RV-gwa" secondAttribute="bottom" constant="193" id="m2d-74-k9E">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="y2K-D6-Smm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="qTv-jg-Twb"/>
                         </constraints>
                     </view>
                     <connections>
