@@ -18,8 +18,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2K-D6-Smm" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="87" y="131" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dn-RV-gwa">
+                                        <rect key="frame" x="20" y="20" width="200" height="88"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
+                                    <constraint firstItem="6dn-RV-gwa" firstAttribute="leading" secondItem="y2K-D6-Smm" secondAttribute="leading" constant="20" id="3A8-k8-8mJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6dn-RV-gwa" secondAttribute="trailing" constant="20" id="F9w-lL-wjN"/>
+                                    <constraint firstItem="6dn-RV-gwa" firstAttribute="top" secondItem="y2K-D6-Smm" secondAttribute="top" constant="20" id="gTw-rD-thu"/>
+                                    <constraint firstAttribute="bottom" secondItem="6dn-RV-gwa" secondAttribute="bottom" constant="20" id="iGw-AG-oHv"/>
                                     <constraint firstAttribute="height" constant="128" id="jUk-Ez-xIO"/>
                                 </constraints>
                             </view>
@@ -47,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="animationButton" destination="4ky-9h-AnO" id="JnA-RI-dEC"/>
+                        <outlet property="animationDescription" destination="6dn-RV-gwa" id="eDI-Dy-4gJ"/>
                         <outlet property="animationView" destination="y2K-D6-Smm" id="65g-Fu-4yS"/>
                     </connections>
                 </viewController>
